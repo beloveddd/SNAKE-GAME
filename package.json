@@ -1,0 +1,23 @@
+{
+  "name": "snake_server",
+  "version": "0.0.1",
+  "description": "snake project fd-2 game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "game",
+    "snake"
+  ],
+  "author": "Yuliya Bialova <yuliya.bialova@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.7",
+    "express": "^4.17.2"
+  }
+}

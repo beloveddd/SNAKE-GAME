@@ -1,0 +1,203 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('../image/background.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  canvas {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  @font-face {
+    font-family: 'myFont';
+    src: url('../fonts/Boncegro.otf');
+  }
+
+  .title {
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    top:5%;
+    font-family: "myFont";
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+  }
+  #spaSnake {
+    font-family: "myFont";
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+  }
+
+  .header {
+    margin-top: 15px;
+  }
+
+  .header a,
+  header a:visited  {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .header a:hover {
+    color: #fff;
+  }
+
+  .mainmenu__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+  }
+
+  .mainmenu li {
+    list-style: none;
+    border: 1px gray solid;
+    border-radius: 3px;
+    margin: 0 1px ;
+  }
+
+  .mainmenu__link {
+    display: block;
+    padding: 10px 25px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .mainmenu__link:hover {
+    text-decoration: none;
+    background-color: rgba(255, 129, 98, 0.7);;
+    color: #fff;
+  }
+
+  .mainmenu__link.active {
+    text-decoration: none;
+    background-color: #edb751;
+    color: #fff;
+  }
+
+  .content {
+    padding: 1.5em 0;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  section ol li {
+    text-align: left;
+    list-style-position: inside;
+  }
+
+  .registration {
+    margin: 0 15px;
+  }
+
+  .rules-page,
+  .default-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  fieldset {
+    border-radius: 3px;
+    border-color:rgba(0, 0, 0, 0.8);
+  }
+
+  fieldset p input {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+    background: transparent;
+    height: 30px;
+    width: 250px;
+  }
+
+  .greeting {
+    width: 250px;
+  }
+
+  fieldset p button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 20px;
+    background-color: rgba(255, 129, 98, 0.7);
+    border-radius: 5px;
+  }
+
+  fieldset p button:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .arrowUp {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .arrowUp img {
+    width: 30px;
+    opacity: 0.8;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .userName {
+    font-size: 25px;
+  }
+
+  @media only all and (min-width: 384px) and (max-width: 600px) {
+    .rules-page,
+    .default-page {
+      flex-direction: column-reverse;
+      font-size: 12px;
+    }
+
+  }
+  
+  @media only all and (min-width: 280px) and (max-width: 383px) {
+    .rules-page,
+    .default-page {
+      display: flex;
+      flex-direction: column-reverse;
+      font-size: 12px;
+    }
+
+    .mainmenu__list {
+      flex-direction: column;
+      top: 85%;
+    }
+
+    fieldset p input {
+      width: 200px;
+    }
+
+    fieldset p button {
+      font-size: 12px;
+      padding: 5px 15px;
+    }
+
+  }
